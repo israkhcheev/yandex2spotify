@@ -67,7 +67,7 @@ class NotFoundException(SpotifyException):
 
 
 class Importer:
-    def __init__(self, spotify_client, yandex_client: Client, ignore_list, strict_search, chunk_size=40):
+    def __init__(self, spotify_client, yandex_client: Client, ignore_list, strict_search, chunk_size):
         self.spotify_client = spotify_client
         self.yandex_client = yandex_client
         self.chunk_size = chunk_size
